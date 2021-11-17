@@ -155,9 +155,11 @@ h1 {
     }
     
     .list {
+        justify-content: space-around;
         margin: 0;
         width: 100%;
     }
+
 
 }
 /* media 992px end */
