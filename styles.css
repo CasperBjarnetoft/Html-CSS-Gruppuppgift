@@ -84,7 +84,7 @@ h1 {
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
     background-color: var(--text-color);
-    color: var(--seconadry-color);
+    color: var(--primary-color);
     border-radius: 5px;
 }
 /* Carousel end */
