@@ -96,11 +96,11 @@ h1 {
 }
 
 .list {
-    max-width: 60%;
+    max-width: 100%;
     margin: auto;
-    justify-content: center;
+    justify-content: space-around;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
 }
 
 .stats {
@@ -132,6 +132,7 @@ h1 {
     }
 
     .list {
+        max-width: 60%;
         grid-template-columns: auto auto;
         justify-content: space-around;
     }
