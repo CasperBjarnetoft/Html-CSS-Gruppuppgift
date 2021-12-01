@@ -18,7 +18,7 @@ body {
 
 
 .container{
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
@@ -84,23 +84,23 @@ h1 {
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
     background-color: var(--text-color);
-    color: var(--primary-color);
     border-radius: 5px;
 }
 /* Carousel end */
 
 /* Informations sida start Casper */
 .map {
-    background: url(img/map.svg);
+    background: url('img/map.svg');
     background-repeat: no-repeat;
     background-position-x: center;
 }
 
 .list {
-    width: 80%;
+    max-width: 60%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 .stats {
@@ -108,13 +108,13 @@ h1 {
 }
 
 .stats h3 {
-    font-size: 1rem;
+    font-size: 1.8rem;
 }
 
 .stats p {
     color: var(--header-color);
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 1.2rem;
+    text-align: left;
 }
 /* Informations sida end */
 
@@ -131,15 +131,11 @@ h1 {
         height: 520px;
     }
 
-    .stats h3 {
-        font-size: 1.8rem;
+    .list {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
     }
-    
-    .stats p {
-        color: var(--header-color);
-        font-size: 1.2rem;
-        text-align: center;
-    }
+
 }
 /* media 768px end */
 
@@ -155,9 +151,7 @@ h1 {
     }
     
     .list {
-        justify-content: space-around;
-        margin: 0;
-        width: 100%;
+        grid-template-columns: auto auto auto auto;
     }
 
 
